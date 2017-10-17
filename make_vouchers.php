@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   #make vouchers
   for ($x = 0; $x < $num_vouchers; $x++) {
     $randu = substr(md5(microtime()), rand(0, 26), 5);
-    $voucher_login = $voucher_prefix . "--" . $randu;
+    $voucher_login = $voucher_prefix . "_" . $randu;
     $randpw = substr(md5(microtime()), rand(0, 26), 5);
     $voucher_pw = $randpw;
 
