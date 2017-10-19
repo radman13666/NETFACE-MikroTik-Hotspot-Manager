@@ -75,6 +75,17 @@ function genPool($oct1, $oct2, $oct3, $oct4, $mask) {
   return array("pool" => "$first_host-$last_host", "server" => $serv);
 }
 
+/*function reset_router($router_addr, $username, $password) {
+	$API = new RoutersAPI();
+	$API->debug = true;
+
+	if ($API->connect($router_addr, $username, $password) {
+		$API->write("/system/reset-configuration", false);
+		#$API->write("=no-defaults=yes");
+		$READ = $API->read(false);
+	}
+}*/
+
 function setup($router_addr, $username, $password) { 
 	$API = new RouterosAPI();
 	$API->debug = true;

@@ -175,7 +175,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <input type="submit" value="SETUP">
 </fieldset>
 </form>
-
+<!--
+<form action="<?php echo htmlspecialchars('reset_all_hotspots.php');?>" 
+      method="post">
+<fieldset>
+<legend><b>RESET ONE HOTSPOT<b></legend>
+<label>IP address:</label>
+<input type="text" name="hs_addr" required="required"><br><br>
+<input type="submit" value="RESET">
+</fieldset>
+</form>
+-->
 </div>
 
 <?php
