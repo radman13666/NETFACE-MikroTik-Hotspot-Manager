@@ -1,1 +1,3 @@
 # NETFACE-MikroTik-Hotspot-Manager
+
+This project aims to create a user-friendly interface for regular business owners to use MikroTik routers as hotspots in their businesses. The server-side is implemented in PHP. It basically utilises a RADIUS server (<a href="https://freeradius.org/">FreeRADIUS</a>), used for authenticating, authorisation and accounting, of users connecting to the MikroTik hotspots. The system creates vouchers with MD5 passwords. These vouchers are then authenticated with <a href="https://www.tldp.org/LDP/nag/node120.html">PAP</a> via the RADIUS server, since it accepts both clear-text and encrypted passwords. 
